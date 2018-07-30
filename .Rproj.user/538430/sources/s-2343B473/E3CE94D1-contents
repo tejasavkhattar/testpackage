@@ -21,4 +21,4 @@ densityplot <- function(data, var_x) {
   d <-density(data[,var_x])
   plot(d)
 }
-}
+

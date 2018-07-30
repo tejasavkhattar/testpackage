@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "2563935022",
     "id" : "E3CE94D1",
-    "lastKnownWriteTime" : 1532930548,
-    "last_content_update" : 1532930548250,
+    "lastKnownWriteTime" : 1532931180,
+    "last_content_update" : 1532931180706,
     "path" : "~/Desktop/testpackage/R/hello.R",
     "project_path" : "R/hello.R",
     "properties" : {
-        "cursorPosition" : "19,0",
+        "cursorPosition" : "23,0",
         "scrollLine" : "12"
     },
     "relative_order" : 1,
