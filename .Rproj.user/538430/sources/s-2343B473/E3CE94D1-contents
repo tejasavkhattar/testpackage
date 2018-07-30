@@ -15,7 +15,7 @@
 densityplot <- function(data, var_x) {
   library(jsonlite)
 
-  data <- fromJSON(data)
+
   data <- na.omit(data)
 
   d <-density(data[,var_x])

@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2563935022",
+    "hash" : "0",
     "id" : "E3CE94D1",
-    "lastKnownWriteTime" : 1532931180,
-    "last_content_update" : 1532931180706,
+    "lastKnownWriteTime" : 1532935770,
+    "last_content_update" : 1532935770364,
     "path" : "~/Desktop/testpackage/R/hello.R",
     "project_path" : "R/hello.R",
     "properties" : {
-        "cursorPosition" : "23,0",
-        "scrollLine" : "12"
+        "cursorPosition" : "17,0",
+        "scrollLine" : "10"
     },
     "relative_order" : 1,
     "source_on_save" : false,
