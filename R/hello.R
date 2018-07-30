@@ -14,6 +14,9 @@
 #   Test Package:              'Ctrl + Shift + T'
 densityplot <- function(data, var_x) {
 
+  library(jsonlite)
+
+  data <- fromJSON(data)
 
 
   data <- na.omit(data)
@@ -21,6 +24,5 @@ densityplot <- function(data, var_x) {
   d <-density(data[,var_x])
   d <- toJSON(d)
   list(message = paste(d))
-
 }
 
