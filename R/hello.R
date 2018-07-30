@@ -19,6 +19,8 @@ densityplot <- function(data, var_x) {
   data <- na.omit(data)
 
   d <-density(data[,var_x])
-  plot(d)
+  d <- toJSON(d)
+  list(message = paste(d))
+
 }
 
