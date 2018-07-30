@@ -13,7 +13,7 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 densityplot <- function(data, var_x) {
-  library(jsonlite)
+
 
 
   data <- na.omit(data)
