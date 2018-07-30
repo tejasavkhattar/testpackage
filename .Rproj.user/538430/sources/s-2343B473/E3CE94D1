@@ -7,12 +7,12 @@
     "folds" : "",
     "hash" : "0",
     "id" : "E3CE94D1",
-    "lastKnownWriteTime" : 1532948638,
-    "last_content_update" : 1532948638919,
+    "lastKnownWriteTime" : 1532950571,
+    "last_content_update" : 1532950571115,
     "path" : "~/Desktop/testpackage/R/hello.R",
     "project_path" : "R/hello.R",
     "properties" : {
-        "cursorPosition" : "18,24",
+        "cursorPosition" : "19,0",
         "scrollLine" : "13"
     },
     "relative_order" : 1,
