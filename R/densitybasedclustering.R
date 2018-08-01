@@ -9,7 +9,7 @@ densitybasedclustering <- function(data, var_x, var_y, eps, MinPts) {
   db <- fpc::dbscan(df, eps, MinPts)
   install.packages('factoextra', repos='http://cran.us.r-project.org')
   library("factoextra")
-  fviz_cluster(db, data = df, stand = FALSE,
+  facttoextra::fviz_cluster(db, data = df, stand = FALSE,
                ellipse = FALSE, show.clust.cent = FALSE,
                geom = "point",palette = "jco", ggtheme = theme_classic())
 }
