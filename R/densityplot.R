@@ -12,16 +12,20 @@
 #   Build and Reload Package:  'Ctrl + Shift + B'
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
-densityplot <- function(data, var_x) {
 
+densitybasedclustering <- function(data, var_x, var_y, eps, MinPts) {
   library(jsonlite)
-
   data <- fromJSON(data)
-
   data <- na.omit(data)
-
-  d <-density(data[,var_x])
-
-  plot(d)
+  var_x <- data[,var_x]
+  var_y <- data[,var_y]
+  df <- cbind(var_x,var_y)
+  library("fpc")
+  db <- fpc::dbscan(df, eps, MinPts)
+  library("factoextra")
+  fviz_cluster(db, data = df, stand = FALSE,
+               ellipse = FALSE, show.clust.cent = FALSE,
+               geom = "point",palette = "jco", ggtheme = theme_classic())
 }
+
 
