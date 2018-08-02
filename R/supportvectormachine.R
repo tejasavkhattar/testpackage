@@ -3,7 +3,7 @@ supportvectormachine <- function(data, formula, formula2, k, var_x, value1, var_
   data < toJSON(data)
   data <- fromJSON(data)
   library(e1071)
-  mymodel <- svm(formula, data=data, kernel=k)
+  mymodel <- svm(formula, data=data, kernel=k, type="C-classification", scale=FALSE)
   list2 <-list()
   list2$var_x <- value1
   list2$var_y <- value2
