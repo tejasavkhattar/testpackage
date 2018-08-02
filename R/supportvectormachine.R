@@ -4,7 +4,7 @@ supportvectormachine <- function(dat, formul, formula2, var_x, value1, var_y, va
   dat <- na.omit(dat)
   library(e1071)
   mymodel <- svm(formul, data=dat,  na.action =
-                   na.omit)
+                   na.omit, scale = FALSE)
   list2 <-list()
   list2$var_x <- value1
   list2$var_y <- value2
