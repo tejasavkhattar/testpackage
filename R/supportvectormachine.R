@@ -1,7 +1,6 @@
 supportvectormachine <- function(data, formula, formula2, k, var_x, value1, var_y, value2){
   library(jsonlite)
   data <- fromJSON(data)
-  data <- na.omit(data)
   library(e1071)
   mymodel <- svm(formula, data=data, kernel=k, scale= FALSE)
   list2 <-list()
