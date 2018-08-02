@@ -1,14 +1,13 @@
-supportvectormachine <- function(data, formula, formula2, k, var_x, value1, var_y, value2){
+supportvectormachine <- function(dat, formul, formula2, k, var_x, value1, var_y, value2){
   library(jsonlite)
-  data < toJSON(data)
-  data <- fromJSON(data)
+  dat <- fromJSON(dat)
   library(e1071)
-  mymodel <- svm(formula, data=data, kernel=k, type="C-classification", scale=FALSE)
+  mymodel <- svm(formula=formul, data=dat, kernel=k, type="C-classification", scale=FALSE)
   list2 <-list()
   list2$var_x <- value1
   list2$var_y <- value2
   names(list2) <- c(var_x, var_y)
-  plot(mymodel, data, formula2, slice=list2)
+  plot(mymodel, dat, formula2, slice=list2)
 }
 
 
