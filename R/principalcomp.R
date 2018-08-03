@@ -1,4 +1,6 @@
 principalcomp <- function(data, classify){
+  library(jsonlite)
+  data <- fromJSON(data)
   library(ggfortify)
   df <- data[,-grep(classify, names(data))]
   autoplot(prcomp(df))
