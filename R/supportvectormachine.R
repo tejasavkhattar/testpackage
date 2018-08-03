@@ -4,7 +4,7 @@ supportvectormachine <- function(dat, formul, formula2, k, var_x, value1, var_y,
   dat <- fromJSON(dat)
   dat <- na.omit(dat)
 
-  dat <- as.data.frame(dat)
+  dat <- as.matrix(dat)
   .formul <-reformulate(formul)
   .formula2 <-reformulate(formula2)
   library(e1071)
