@@ -1,4 +1,11 @@
 supportvectormachine <- function(dat, formul, formula2, k, var_x, value1, var_y, value2){
+  print(formul)
+  print(formula2)
+  print(k)
+  print(var_x)
+  print(value1)
+  print(var_y)
+  print(value2)
   library(jsonlite)
   dat <- fromJSON(dat)
   dat <- na.omit(dat)
