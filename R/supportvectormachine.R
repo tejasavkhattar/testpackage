@@ -4,8 +4,8 @@ supportvectormachine <- function(dat, classify1, formula2, k, var_x, value1, var
   dat <- fromJSON(dat)
   dat <- na.omit(dat)
   dat <- as.data.frame(dat)
-  y <- data[,classify]
-  x <- data[,-grep(classify, names(data))]
+  y <- data[,classify1]
+  x <- data[,-grep(classify1, names(data))]
   x <- as.matrix(x)
   library(e1071)
   mymodel <- svm(y~x, data=dat, kernel=k, scale= FALSE)
