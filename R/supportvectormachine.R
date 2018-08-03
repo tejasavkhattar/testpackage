@@ -1,4 +1,6 @@
 supportvectormachine <- function(dat, formul, formula2, k, var_x, value1, var_y, value2){
+  library(jsonlite)
+  dat <- fromJSON(dat)
 
   .formul <-reformulate(formul)
   .formula2 <-reformulate(formula2)
