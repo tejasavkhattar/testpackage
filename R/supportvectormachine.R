@@ -3,6 +3,7 @@ supportvectormachine <- function(dat, classify1, formula2, k, var_x, value1, var
   library(jsonlite)
   dat <- fromJSON(dat)
   dat <- na.omit(dat)
+  classify1 <- as.character(classify1)
   dat <- as.data.frame(dat)
   y <- data[,classify1]
   x <- data[,-grep(classify1, names(data))]
