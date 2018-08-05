@@ -4,7 +4,7 @@ supportvectormachine <- function(dat, formul, formula2, new, k, var_x, value1, v
   dat <- na.omit(dat)
   .formul <- reformulate(termlabels = c('.'), response=formul)
   .formula2 <- reformulate(termlabels = c(new), response=formula2)
-  dat <- as.data.frame(dat)
+  dat <- as.matrix(dat)
   library(e1071)
   mymodel <- svm(.formul, data=dat, kernel=k,type="C-classification", scale = FALSE)
   list2 <-list()
