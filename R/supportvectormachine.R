@@ -1,7 +1,7 @@
 supportvectormachine <- function(dat, formul, formula2, new, k, var_x, value1, var_y, value2) {
   library(jsonlite)
-  data <- fromJSON(data)
-  data <- na.omit(data)
+  dat <- fromJSON(dat)
+  dat <- na.omit(dat)
   .formul <- reformulate(termlabels = c('.'), response=formul)
   .formula2 <- reformulate(termlabels = c(new), response=formula2)
   dat <- as.data.frame(dat)
