@@ -5,7 +5,7 @@ supportvectormachine <- function(dat, formul, formula2, new, k, var_x, value1, v
   .formula2 <- reformulate(termlabels = c(new), response=formula2)
   dat <- as.data.frame(dat)
   library(e1071)
-  mymodel <- svm(.formul, data=dat, kernel=k)
+  mymodel <- svm(.formul, data=dat, kernel=k,type="C-classification")
   list2 <-list()
   list2$var_x <- value1
   list2$var_y <- value2
