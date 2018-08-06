@@ -1,6 +1,7 @@
 distributionbasedclustering <- function(data, classify) {
   library(jsonlite)
   data <- fromJSON(data)
+  data <- na.omit(data)
   library(mclust)
   cl <- data[,grep(classify, names(data))]
   X <- data[,-grep(classify, names(data))]
