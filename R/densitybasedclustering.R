@@ -1,4 +1,4 @@
-densitybasedclusterin <- function(data, var_x, var_y, eps, MinPts) {
+densitybasedclustering <- function(data, var_x, var_y, eps, MinPts) {
   library(jsonlite)
   data <- fromJSON(data)
   data <- na.omit(data)
