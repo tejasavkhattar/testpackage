@@ -18,8 +18,7 @@ densityplot <- function(data, var_x) {
   data <- fromJSON(data)
   data <- na.omit(data)
   d <- density(data[,var_x])
-  par(mar=c(1,1,1,1))
-  par("mar")
+
   plot(d)
 }
 
