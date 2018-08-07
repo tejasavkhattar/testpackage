@@ -7,5 +7,5 @@ principalcomp <- function(data, classify){
   autoplot(prcomp(df))
   autoplot(prcomp(df), data = data, colour = classify,
            loadings = TRUE, loadings.colour = 'blue',
-           loadings.label = TRUE, loadings.label.size = 3)
+           loadings.label = TRUE, loadings.label.size = 7)
 }
