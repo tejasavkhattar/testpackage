@@ -1,6 +1,6 @@
-#copyright 2016 Helikar Lab
+#copyright 2018 Helikar Lab
 
-#Developed by Shubham Kumar, Vinit Ravishankar and Akram Mohammed
+#Developed by Achilles Gasper Rasquinah, Tejasav Khattar,Shubham Kumar, Vinit Ravishankar and Akram Mohammed
 
 #This program is free software: you can redistribute it and/or modify it under
 #the terms of the GNU General Public License as published by the Free Software
