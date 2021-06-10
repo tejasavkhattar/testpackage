@@ -1,4 +1,4 @@
-Django==2.0.5
+Django==2.2.24
 gunicorn==19.6.0
 certifi==2018.4.16
 chardet==3.0.4
