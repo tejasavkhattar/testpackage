@@ -53,7 +53,7 @@
     "jquery.tipsy": "^1.0.3",
     "live-server": "^1.2.0",
     "node-libs-browser": "^2.1.0",
-    "opencpu": "^0.4.0",
+    "opencpu": "^1.1.1",
     "papaparse": "^4.5.0",
     "popper.js": "^1.14.3",
     "react": "^16.3.0",
